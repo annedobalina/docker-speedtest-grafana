@@ -13,7 +13,7 @@ Docker setup consisting out of Grafana incl. a pre-configured dashboard, InfluxD
 
 ** Changes:  
 
-- Added Loss and Jitter to docker/speedtest/index.js to record in bits per second.
+- Added Loss and Jitter to docker/speedtest/index.js and amended the output to record upload and download in bits per second.
 - Amended dashboard for docker/grafana/provisioning/dashboards/speedtest.json including loss and jitter, as well as amending graphics for bits/second transformation.
 - Amended docker-compose so that the speedtest Dockerfile builds with the amended index.js
 
