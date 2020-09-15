@@ -30,7 +30,9 @@ git clone https://github.com/annedobalina/docker-speedtest-grafana
 3. Create a copy of the sample `.env` file and adjust it at will:
 
 ```shell
+cd docker-speedtest-grafana
 cp .env.sample .env
+nano .env
 ```
 
 4. Spin up the containers:
