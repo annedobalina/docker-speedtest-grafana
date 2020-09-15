@@ -3,6 +3,13 @@
 ![](https://i.imgur.com/cvfhIDH.png)
 
 Docker setup consisting out of Grafana incl. a pre-configured dashboard, InfluxDB and a [speedtest.net CLI test](https://www.speedtest.net/apps/cli) runner.
+**Forked from https://github.com/frdmn/docker-speedtest-grafana
+** Changes:  
+
+- Added Loss and Jitter to docker/speedtest/index.js to record in bits per second.
+- Amended dashboard for docker/grafana/provisioning/dashboards/speedtest.json including loss and jitter, as well as amending graphics for bits/second transformation.
+- Amended docker-compose so that the speedtest Dockerfile builds with the amended index.js
+
 
 ## Installation
 
@@ -10,7 +17,7 @@ Docker setup consisting out of Grafana incl. a pre-configured dashboard, InfluxD
 2. Clone this repository:
 
 ```shell
-git clone https://github.com/frdmn/docker-speedtest-grafana
+https://github.com/annedobalina/docker-speedtest-grafana
 ```
 
 3. Create a copy of the sample `.env` file and adjust it at will:
