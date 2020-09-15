@@ -38,3 +38,5 @@ services:
       - "SPEEDTEST_INTERVAL=${SPEEDTEST_SPEEDTEST_INTERVAL}"
       - "SPEEDTEST_HOST=${SPEEDTEST_HOST}"
     depends_on:
+      - influxdb
+
